@@ -7,35 +7,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetLeagueImage = document.getElementById('target-league-image');
 
     const rankImagePaths = {
-        'Demir 4': 'images/ranks/iron.png',
-        'Demir 3': 'images/ranks/iron.png',
-        'Demir 2': 'images/ranks/iron.png',
-        'Demir 1': 'images/ranks/iron.png',
-        'Bronz 4': 'images/ranks/bronz.png',
-        'Bronz 3': 'images/ranks/bronz.png',
-        'Bronz 2': 'images/ranks/bronz.png',
-        'Bronz 1': 'images/ranks/bronz.png',
-        'Gümüş 4': 'images/ranks/silver.png',
-        'Gümüş 3': 'images/ranks/silver.png',
-        'Gümüş 2': 'images/ranks/silver.png',
-        'Gümüş 1': 'images/ranks/silver.png',
-        'Altın 4': 'images/ranks/gold.png',
-        'Altın 3': 'images/ranks/gold.png',
-        'Altın 2': 'images/ranks/gold.png',
-        'Altın 1': 'images/ranks/gold.png',
-        'Platin 4': 'images/ranks/platinum.png',
-        'Platin 3': 'images/ranks/platinum.png',
-        'Platin 2': 'images/ranks/platinum.png',
-        'Platin 1': 'images/ranks/platinum.png',
-        'Zümrüt 4': 'images/ranks/emerald.png',
-        'Zümrüt 3': 'images/ranks/emerald.png',
-        'Zümrüt 2': 'images/ranks/emerald.png',
-        'Zümrüt 1': 'images/ranks/emerald.png',
-        'Elmas 4': 'images/ranks/diamond.png',
-        'Elmas 3': 'images/ranks/diamond.png',
-        'Elmas 2': 'images/ranks/diamond.png',
-        'Elmas 1': 'images/ranks/diamond.png',
-        'Ustalık': 'images/ranks/grandmaster.png',
+        'Demir 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/iron.png',
+        'Demir 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/iron.png',
+        'Demir 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/iron.png',
+        'Demir 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/iron.png',
+        'Bronz 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/bronz.png',
+        'Bronz 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/bronz.png',
+        'Bronz 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/bronz.png',
+        'Bronz 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/bronz.png',
+        'Gümüş 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/silver.png',
+        'Gümüş 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/silver.png',
+        'Gümüş 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/silver.png',
+        'Gümüş 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/silver.png',
+        'Altın 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/gold.png',
+        'Altın 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/gold.png',
+        'Altın 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/gold.png',
+        'Altın 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/gold.png',
+        'Platin 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/platinum.png',
+        'Platin 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/platinum.png',
+        'Platin 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/platinum.png',
+        'Platin 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/platinum.png',
+        'Zümrüt 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/emerald.png',
+        'Zümrüt 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/emerald.png',
+        'Zümrüt 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/emerald.png',
+        'Zümrüt 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/emerald.png',
+        'Elmas 4': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/diamond.png',
+        'Elmas 3': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/diamond.png',
+        'Elmas 2': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/diamond.png',
+        'Elmas 1': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/diamond.png',
+        'Ustalık': 'https://raw.githubusercontent.com/khadija2807/LeonBoost/main/grandmaster.png',
         'placeholder': 'images/ranks/placeholder_rank.png'
     };
 
@@ -316,6 +316,7 @@ function translateByDataAttr(lang) {
         }
     });
 }
+
 
 
 
