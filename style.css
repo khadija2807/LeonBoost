@@ -12,13 +12,12 @@
 }
 
 body {
-  background-image: url('images/leonboost_logo.png');
+  background-image: url(https://raw.githubusercontent.com/khadija2807/LeonBoost/main/leonboost_logo.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
-
 
 * {
     margin: 0;
@@ -2040,6 +2039,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
+
 
 
 
