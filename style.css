@@ -720,84 +720,60 @@ h6 {
 }
 
 /* Footer Stil */
-.main-footer {
-    background-color: var(--dark-bg);
-    padding: 60px 0 20px;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-grid {
+ .main-footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    margin-bottom: 40px;
-}
-
-.footer-logo {
-    height: 60px;
-    /* Footer loqosu ölçüsü */
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 5px rgba(255, 140, 0, 0.5));
-}
-
-.footer-about p,
-.footer-links ul li a,
-.footer-contact p,
-.footer-contact a {
-    color: var(--light-gray);
-    font-size: 0.95em;
-}
-
-.footer-links h3,
-.footer-contact h3,
-.footer-payments h3 {
-    color: var(--text-color);
-    margin-bottom: 20px;
-    font-size: 1.3em;
-}
-
-.footer-contact i {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer-about img {
+    max-width: 180px;
+    margin-bottom: 15px;
+  }
+  .footer-links h3,
+  .footer-contact h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  .footer-links ul li a:hover {
+    color: yellow;
+  }
+  .social-icons a {
     margin-right: 10px;
-    color: var(--primary-color);
-}
-
-.social-icons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    font-size: 1.5em;
-    color: var(--light-gray);
-}
-
-.social-icons a:hover {
-    color: var(--primary-color);
-}
-
-.payment-icons img {
-    height: 35px;
-    margin-right: 15px;
-    filter: grayscale(100%);
-    /* Başlangıçta gri tonlu */
-    transition: filter 0.3s ease;
-}
-
-.payment-icons img:hover {
-    filter: grayscale(0%);
-    /* Üzerine gelince renkli olur */
-}
-
-.footer-bottom {
+    color: yellow;
+    font-size: 1.2em;
+  }
+  .payment-icons img {
+    max-height: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .footer-bottom {
     text-align: center;
-    border-top: 1px solid var(--border-color);
-    padding-top: 20px;
-    color: var(--light-gray);
-    font-size: 0.85em;
+    border-top: 1px solid #333;
     margin-top: 20px;
-}
-
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
 .disclaimer-text {
     margin-top: 10px;
     font-size: 0.8em;
@@ -2039,6 +2015,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
+
 
 
 
