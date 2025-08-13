@@ -12,7 +12,6 @@
 }
 
 body {
-    background-image: url(https://raw.githubusercontent.com/khadija2807/LeonBoost/main/leonboost_logo.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -2040,3 +2039,4 @@ select {
         width: 100%;
     }
 }
+
