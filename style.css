@@ -59,7 +59,7 @@ ul {
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     white-space: nowrap;
@@ -2041,6 +2041,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
+
 
 
 
