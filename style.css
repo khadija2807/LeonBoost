@@ -1,741 +1,129 @@
+/* Genel Stil Ayarları */
 :root {
-
-    --primary-color: #FFD700;
-
-    /* Parlaq Qızılı Sarı *
-
-    /* Parlaq Qırmızı-Narıncı */
-
-    --dark-bg: #1a1a1a;
-
-    --darker-bg: #121212;
-
-    --text-color: #e0e0e0;
-
-    --light-gray: #ccc;
-
-    --white: #fff;
-
-    /* --red-highlight: #e74c3c; BU XƏTTİ TAMAMİLƏ SİLİN VƏ YA ŞƏRHƏ ÇEVİRİN */
-
+    --primary-color: #FFD700;
+    /* Parlaq Qızılı Sarı *
+    /* Parlaq Qırmızı-Narıncı */
+    --dark-bg: #1a1a1a;
+    --darker-bg: #121212;
+    --text-color: #e0e0e0;
+    --light-gray: #ccc;
+    --white: #fff;
+    /* --red-highlight: #e74c3c; BU XƏTTİ TAMAMİLƏ SİLİN VƏ YA ŞƏRHƏ ÇEVİRİN */
 }
-
-
 
 body {
-
-  background-image: url(https://raw.githubusercontent.com/khadija2807/LeonBoost/main/leonboost_logo.png);
-
-  background-repeat: no-repeat;
-
-  background-position: center center;
-
-  background-size: cover;
-
-  background-attachment: fixed;
-
+  background-image: url(https://raw.githubusercontent.com/khadija2807/LeonBoost/main/leonboost_logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-
-
-
 
 
 * {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
 
 body {
-
-    font-family: 'Poppins', sans-serif;
-
-    background-color: var(--darker-bg);
-
-    color: var(--text-color);
-
-    line-height: 1.6;
-
-    overflow-x: hidden;
-
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darker-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
-
-
 
 .container {
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    padding: 0 20px;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
- 
-
-
-
+ 
 
 
 a {
-
-    color: var(--primary-color);
-
-    text-decoration: none;
-
-    transition: color 0.3s ease;
-
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-
-
-
-
 
 
 
 ul {
-
-    list-style: none;
-
+    list-style: none;
 }
-
-
 
 .btn {
-
-    display: inline-block;
-
-    padding: 12px 25px;
-
-    border-radius: 5px;
-
-    font-weight: 600;
-
-    text-align: center;
-
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
-    cursor: pointer;
-
-    white-space: nowrap;
-
-    /* Düymə mətninin bir sətirdə qalmasını təmin edir */
-
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    white-space: nowrap;
+    /* Düymə mətninin bir sətirdə qalmasını təmin edir */
 }
-
-
 
 .btn-primary {
-
-    background-color: var(--primary-color);
-
-    color: var(--darker-bg);
-
-    border: none;
-
-    font-size: 1.1em;
-
+    background-color: var(--primary-color);
+    color: var(--darker-bg);
+    border: none;
+    font-size: 1.1em;
 }
-
-
 
 .btn-primary:hover {
-
-    /*background-color: var(--secondary-color);*/
-
-    transform: translateY(-2px);
-
+    /*background-color: var(--secondary-color);*/
+    transform: translateY(-2px);
 }
-
-
 
 .btn-secondary {
-
-    background-color: transparent;
-
-    color: var(--primary-color);
-
-    border: 2px solid var(--primary-color);
-
-    font-size: 0.9em;
-
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-size: 0.9em;
 }
-
-
 
 .btn-secondary:hover {
-
-    background-color: var(--primary-color);
-
-    color: var(--darker-bg);
-
-    transform: translateY(-2px);
-
+    background-color: var(--primary-color);
+    color: var(--darker-bg);
+    transform: translateY(-2px);
 }
-
-
 
 .btn-login,
-
 .btn-signup {
-
-    padding: 8px 15px;
-
-    font-size: 0.9em;
-
-    border: 1px solid var(--primary-color);
-
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border: 1px solid var(--primary-color);
 }
-
-
 
 .btn-login {
-
-    background-color: transparent;
-
-    color: var(--primary-color);
-
+    background-color: transparent;
+    color: var(--primary-color);
 }
-
-
 
 .btn-login:hover {
-
-    background-color: var(--primary-color);
-
-    color: var(--darker-bg);
-
+    background-color: var(--primary-color);
+    color: var(--darker-bg);
 }
-
-
 
 .btn-signup {
-
-    background-color: var(--primary-color);
-
-    color: var(--darker-bg);
-
-    border: none;
-
+    background-color: var(--primary-color);
+    color: var(--darker-bg);
+    border: none;
 }
-
-
-
-
-
 
 
 
 
 h1,
-
 h2,
-
 h3 {
-
-    font-family: 'Montserrat', sans-serif;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-
-    color: var(--text-color);
-
-}
-
-
-
-h2 {
-
-    font-size: 2.5em;
-
-    margin-top: 60px;
-
-    margin-bottom: 40px;
-
-    position: relative;
-
-}
-
-
-
-h2::after {
-
-    content: '';
-
-    display: block;
-
-    width: 60px;
-
-    height: 3px;
-
-    background-color: var(--primary-color);
-
-    margin: 15px auto 0;
-
-    border-radius: 5px;
-
-}
-
-
-
-h6 {
-
-    font-size: 1.0em;
-
-    margin-top: 60px;
-
-    margin-bottom: 40px;
-
-    position: relative;
-
-}
-
-
-
-/* Header Stil */
-
-/* HEADER SECTION */
-
-.main-header {
-
-    background-color: var(--dark-bg);
-
-    padding: 15px 0;
-
-    border-bottom: 2px solid var(--primary-color);
-
-    position: sticky;
-
-    top: 0;
-
-    z-index: 1000;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-
-}
-
-
-
-.header-content {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    /* Əlavə: Sol tərəfdən 20px boşluq verərək bütün başlıq kontentini sola sürüşdürür */
-
-    padding-left: 10px; 
-
-    padding-right: 20px;
-
-}
-
-/* LOQO VƏ MƏTN QƏSƏBƏSİNİN YERLƏŞMƏSİ */
-
-.logo {
-
-    display: flex;
-
-    /* Flexbox istifadə edərək loqo şəkli və mətn qrupunu yan-yana qoyur */
-
-    align-items: center;
-
-    /* Şaquli olaraq mərkəzə hizala */
-
-    gap: 10px;
-
-    /* Loqo şəkli ilə mətn qrupu arasında boşluq */
-
-}
-
-
-
-.logo img {
-
-    height: 50px;
-
-    /* Loqonuzun ölçüsü, ehtiyac varsa tənzimləyin */
-
-    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
-
-}
-
-
-
-/* LOQONUN YANINDAKİ MƏTN QƏSƏBƏSİ (LEONBOOST + Liginizi Zafere Taşıyın) */
-
-.logo-text-group {
-
-    display: flex;
-
-    /* Bu konteyneri də flexbox edirik */
-
-    flex-direction: column;
-
-    /* ƏSAS: Mətnləri bir-birinin altına yığır */
-
-    align-items: flex-start;
-
-    /* Mətnləri soldan hizala */
-
-    line-height: 1.2;
-
-    /* Sətirlər arası boşluğu tənzimləyin */
-
-}
-
-
-
-/* LEONBOOST MƏTNİ ÜÇÜN STILLƏR */
-
-.logo-name {
-
-    color: var(--primary-color);
-
-    /* Loqo mətninin rəngi */
-
-    font-family: 'Poppins', sans-serif;
-
-    /* Şrift */
-
-    font-size: 1.8em;
-
-    /* "LEONBOOST" yazısının ölçüsü (şəkillərdəki böyük ölçüyə görə artırıldı) */
-
-    font-weight: 700;
-
-    /* Daha qalın */
-
-    white-space: nowrap;
-
-    /* Mətnin bir sətirdə qalmasını təmin edir */
-
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
-
-    /* Neon parıltı */
-
-    margin: 0;
-
-    /* Standart boşluqları sıfırla */
-
-}
-
-
-
-/* LİGİNİZİ ZAFERE TAŞIYIN! MƏTNİ ÜÇÜN STILLƏR */
-
-.tagline {
-
-    color: var(--light-gray);
-
-    /* Boz rəng */
-
-    font-family: 'Poppins', sans-serif;
-
-    font-size: 0.9em;
-
-    /* Mətnin ölçüsü */
-
-    font-weight: 400;
-
-    /* Daha yüngül şrift qalınlığı */
-
-    white-space: nowrap;
-
-    margin: 0;
-
-    /* Standart boşluqları sıfırla */
-
-    margin-top: 2px;
-
-    /* LEONBOOST ilə arasında kiçik boşluq */
-
-}
-
-
-
-
-
-/* Mobil uyğunluq üçün (responsive design) - 768px-dən kiçik ekranlarda mətnləri gizlədirik */
-
-@media (max-width: 768px) {
-
-    .logo-text-group {
-
-        display: none;
-
-        /* Kiçik ekranlarda LEONBOOST və tagline mətnlərini gizlədirik */
-
-    }
-
-
-
-    .logo img {
-
-        height: 40px;
-
-        /* Loqo şəklinin ölçüsü kiçik ekranlarda */
-
-    }
-
-
-
-    /* Navigasiya və user controls üçün dəyişikliklər */
-
-    .main-header .main-nav,
-
-    .main-header .user-controls {
-
-        display: none;
-
-        /* Desktopda gizli olan bu elementləri mobil ölçüdə gizlət */
-
-    }
-
-
-
-    .main-header .hamburger-menu {
-
-        display: block;
-
-        /* Hamburger ikonunu göster */
-
-    }
-
-
-
-    /* Hamburger menyusu açıldığında CSS (əvvəlki cavablarımdan) */
-
-    .main-nav.active {
-
-        display: flex;
-
-        flex-direction: column;
-
-        width: 100%;
-
-        background-color: var(--dark-bg);
-
-        position: absolute;
-
-        top: 80px;
-
-        /* Header yüksekliği kadar aşağıda */
-
-        left: 0;
-
-        padding: 20px 0;
-
-        border-top: 1px solid var(--border-color);
-
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
-    }
-
-
-
-    .main-nav.active ul {
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 15px;
-
-    }
-
-
-
-    .user-controls.active {
-
-        display: flex;
-
-        flex-direction: column;
-
-        width: 100%;
-
-        background-color: var(--dark-bg);
-
-        position: absolute;
-
-        top: 280px;
-
-        /* Menüden sonra */
-
-        left: 0;
-
-        padding: 20px 0;
-
-        border-top: 1px solid var(--border-color);
-
-        align-items: center;
-
-    }
-
-}
-
-
-
-.main-nav ul {
-
-    display: flex;
-
-    gap: 30px;
-
-}
-
-
-
-.main-nav ul li a {
-
-    color: var(--light-gray);
-
-    font-weight: 600;
-
-    padding: 5px 0;
-
-    position: relative;
-
-}
-
-
-
-.main-nav ul li a.active,
-
-.main-nav ul li a:hover {
-
-    color: var(--primary-color);
-
-}
-
-
-
-.main-nav ul li a::after {
-
-    content: '';
-
-    position: absolute;
-
-    left: 0;
-
-    bottom: -5px;
-
-    width: 0;
-
-    height: 2px;
-
-    background-color: var(--primary-color);
-
-    transition: width 0.3s ease;
-
-}
-
-
-
-.main-nav ul li a:hover::after,
-
-.main-nav ul li a.active::after {
-
-    width: 100%;
-
-}
-
-
-
-.main-nav ul li a i {
-
-    margin-right: 8px;
-
-    color: var(--accent-color);
-
-    /* Oyun ikonları üçün bənövşəyi */
-
-}
-
-
-
-.user-controls {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-}
-
-
-
-.lang-switcher {
-
-    display: flex;
-
-    gap: 1px;
-
-    margin-left: 10px;
-
-}
-
-
-
-.lang-switcher img {
-
-    width: px;
-
-    height: 28px;
-
-    cursor: pointer;
-
-    /* border: 2px solid transparent; */
-
-    border-radius: 50%;
-
-    /* transition: border-color 0.3s ease; */
-
-}
-
-
-
-
-
-.hamburger-menu {
-
-    display: none;
-
-    /* Mobil için varsayılan olarak gizli */
-
-    font-size: 1.8em;
-
-    cursor: pointer;
-
-    color: var(--primary-color);
-
-}
-
-/*==========================================================
-  UMUMI KOMPONENTLƏR VƏ SEKİLLƏR
-==========================================================*/
-
-/* Başlıqlar */
-h1, h2, h3, h6 {
-    font-family: var(--font-montserrat);
-    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     text-align: center;
-}
-
-h1, h2 {
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+    color: var(--text-color);
 }
 
 h2 {
@@ -755,71 +143,121 @@ h2::after {
     border-radius: 5px;
 }
 
-/* Başqa Dəyişikliklər */
-.btn {
-    box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
+h6 {
+    font-size: 1.0em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.hero-section h1 {
-    font-size: 3.8em;
+/* Header Stil */
+/* HEADER SECTION */
+.main-header {
+    background-color: var(--dark-bg);
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Əlavə: Sol tərəfdən 20px boşluq verərək bütün başlıq kontentini sola sürüşdürür */
+    padding-left: 10px; 
+    padding-right: 20px;
+}
+/* LOQO VƏ MƏTN QƏSƏBƏSİNİN YERLƏŞMƏSİ */
+.logo {
+    display: flex;
+    /* Flexbox istifadə edərək loqo şəkli və mətn qrupunu yan-yana qoyur */
+    align-items: center;
+    /* Şaquli olaraq mərkəzə hizala */
+    gap: 10px;
+    /* Loqo şəkli ilə mətn qrupu arasında boşluq */
+}
+
+.logo img {
+    height: 50px;
+    /* Loqonuzun ölçüsü, ehtiyac varsa tənzimləyin */
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+}
+
+/* LOQONUN YANINDAKİ MƏTN QƏSƏBƏSİ (LEONBOOST + Liginizi Zafere Taşıyın) */
+.logo-text-group {
+    display: flex;
+    /* Bu konteyneri də flexbox edirik */
+    flex-direction: column;
+    /* ƏSAS: Mətnləri bir-birinin altına yığır */
+    align-items: flex-start;
+    /* Mətnləri soldan hizala */
+    line-height: 1.2;
+    /* Sətirlər arası boşluğu tənzimləyin */
+}
+
+/* LEONBOOST MƏTNİ ÜÇÜN STILLƏR */
+.logo-name {
     color: var(--primary-color);
-    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    /* Loqo mətninin rəngi */
+    font-family: 'Poppins', sans-serif;
+    /* Şrift */
+    font-size: 1.8em;
+    /* "LEONBOOST" yazısının ölçüsü (şəkillərdəki böyük ölçüyə görə artırıldı) */
+    font-weight: 700;
+    /* Daha qalın */
+    white-space: nowrap;
+    /* Mətnin bir sətirdə qalmasını təmin edir */
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
+    /* Neon parıltı */
+    margin: 0;
+    /* Standart boşluqları sıfırla */
 }
 
-/* Məsələn, .btn-primary və .btn-secondary sinifləri */
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--darker-bg);
-    border: none;
-    font-size: 1.1em;
-}
-
-.btn-primary:hover {
-    transform: translateY(-2px);
-    filter: brightness(0.9);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+/* LİGİNİZİ ZAFERE TAŞIYIN! MƏTNİ ÜÇÜN STILLƏR */
+.tagline {
+    color: var(--light-gray);
+    /* Boz rəng */
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9em;
+    /* Mətnin ölçüsü */
+    font-weight: 400;
+    /* Daha yüngül şrift qalınlığı */
+    white-space: nowrap;
+    margin: 0;
+    /* Standart boşluqları sıfırla */
+    margin-top: 2px;
+    /* LEONBOOST ilə arasında kiçik boşluq */
 }
 
-.btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: var(--darker-bg);
-    transform: translateY(-2px);
-}
 
-/*==========================================================
-  RESPONSİV DİZAYN (MOBİL UYĞUNLUQ)
-==========================================================*/
-@media (max-width: 1024px) {
-    .main-nav ul {
-        gap: 20px;
-    }
-}
-
+/* Mobil uyğunluq üçün (responsive design) - 768px-dən kiçik ekranlarda mətnləri gizlədirik */
 @media (max-width: 768px) {
     .logo-text-group {
         display: none;
+        /* Kiçik ekranlarda LEONBOOST və tagline mətnlərini gizlədirik */
     }
 
+    .logo img {
+        height: 40px;
+        /* Loqo şəklinin ölçüsü kiçik ekranlarda */
+    }
+
+    /* Navigasiya və user controls üçün dəyişikliklər */
     .main-header .main-nav,
     .main-header .user-controls {
         display: none;
+        /* Desktopda gizli olan bu elementləri mobil ölçüdə gizlət */
     }
 
     .main-header .hamburger-menu {
         display: block;
+        /* Hamburger ikonunu göster */
     }
-    
-    .header-content {
-        justify-content: space-between;
-    }
-    
-    /* Mobil menü açıldığında */
+
+    /* Hamburger menyusu açıldığında CSS (əvvəlki cavablarımdan) */
     .main-nav.active {
         display: flex;
         flex-direction: column;
@@ -827,6 +265,7 @@ h2::after {
         background-color: var(--dark-bg);
         position: absolute;
         top: 80px;
+        /* Header yüksekliği kadar aşağıda */
         left: 0;
         padding: 20px 0;
         border-top: 1px solid var(--border-color);
@@ -846,178 +285,83 @@ h2::after {
         background-color: var(--dark-bg);
         position: absolute;
         top: 280px;
+        /* Menüden sonra */
         left: 0;
         padding: 20px 0;
         border-top: 1px solid var(--border-color);
         align-items: center;
     }
-
-    .hero-section h1 {
-        font-size: 2.5em;
-    }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .hero-section h1 {
-        font-size: 2em;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-}
-
-.logo-text-group {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.logo-name {
-  color: var(--primary-color);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px; /* Ölçü daha standart bir dəyərlə əvəz edildi */
-  font-weight: 700;
-  white-space: nowrap;
-  text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
-  margin: 0;
-}
-
-.tagline {
-  color: var(--light-gray);
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px; /* Ölçü daha standart bir dəyərlə əvəz edildi */
-  font-weight: 400;
-  white-space: nowrap;
-  margin: 0;
-  margin-top: 2px;
-}
-
-/* Navigasiya menusu */
 .main-nav ul {
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    gap: 30px;
 }
 
 .main-nav ul li a {
-  color: var(--light-gray);
-  font-weight: 600;
-  padding: 5px 0;
-  position: relative;
-  transition: color 0.3s ease;
+    color: var(--light-gray);
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
 }
 
 .main-nav ul li a.active,
 .main-nav ul li a:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .main-nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
 }
 
 .main-nav ul li a:hover::after,
 .main-nav ul li a.active::after {
-  width: 100%;
+    width: 100%;
 }
 
-/* Oyun ikonları üçün stillər silindi, çünki HTML-də yoxdur */
+.main-nav ul li a i {
+    margin-right: 8px;
+    color: var(--accent-color);
+    /* Oyun ikonları üçün bənövşəyi */
+}
 
 .user-controls {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Dil seçici (Flags) */
 .lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Boşluq artırıldı */
-  margin-left: 10px;
+    display: flex;
+    gap: 1px;
+    margin-left: 10px;
 }
 
 .lang-switcher img {
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid transparent; /* Varsayılan halda şəffaf sərhəd */
-  opacity: 0.7;
-  transition: all 0.3s ease;
+    width: px;
+    height: 28px;
+    cursor: pointer;
+    /* border: 2px solid transparent; */
+    border-radius: 50%;
+    /* transition: border-color 0.3s ease; */
 }
 
-.lang-switcher img:hover,
-.lang-switcher img.active-lang {
-  opacity: 1;
-  border-color: var(--primary-color);
-  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.6));
-}
 
-/* Responsive dizayn */
-@media (max-width: 768px) {
-  .logo-text-group {
+.hamburger-menu {
     display: none;
-  }
-
-  .logo img {
-    height: 40px;
-  }
-
-  .main-header .main-nav,
-  .main-header .user-controls {
-    display: none;
-  }
-
-  .main-header .hamburger-menu {
-    display: block;
-  }
-
-  .main-nav.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--dark-bg);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  }
-
-  .main-nav.active ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .user-controls.active {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--dark-bg);
-    position: absolute;
-    top: 280px;
-    left: 0;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-    align-items: center;
-  }
+    /* Mobil için varsayılan olarak gizli */
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--primary-color);
 }
+
 
 .hero-content {
     z-index: 2;
@@ -2697,9 +2041,6 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
-
-
-
 
 
 
