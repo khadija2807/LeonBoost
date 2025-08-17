@@ -59,7 +59,7 @@ ul {
     padding: 12px 25px;
     border-radius: 5px;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     white-space: nowrap;
@@ -150,71 +150,157 @@ h6 {
     position: relative;
 }
 
-/* HEADER GENEL */
-/* HEADER GENEL */
+/* Header Stil */
+/* HEADER SECTION */
 .main-header {
     background-color: var(--dark-bg);
-    padding: 10px 40px; /* sağ-sol boşluk */
+    padding: 15px 0;
+    border-bottom: 2px solid var(--primary-color);
     position: sticky;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
 }
 
 .header-content {
-    width: 100%;
-    max-width: 1200px; /* ekranı tamamen kaplamasın */
     display: flex;
-    justify-content: space-between; /* sol logo, sağ nav + user-controls */
+    justify-content: space-between;
     align-items: center;
+    /* Əlavə: Sol tərəfdən 20px boşluq verərək bütün başlıq kontentini sola sürüşdürür */
+    padding-left: 10px; 
+    padding-right: 20px;
 }
-
-/* LOGO VE METİN */
+/* LOQO VƏ MƏTN QƏSƏBƏSİNİN YERLƏŞMƏSİ */
 .logo {
     display: flex;
+    /* Flexbox istifadə edərək loqo şəkli və mətn qrupunu yan-yana qoyur */
     align-items: center;
-    gap: 15px;
+    /* Şaquli olaraq mərkəzə hizala */
+    gap: 10px;
+    /* Loqo şəkli ilə mətn qrupu arasında boşluq */
 }
 
 .logo img {
     height: 50px;
-    display: block;
+    /* Loqonuzun ölçüsü, ehtiyac varsa tənzimləyin */
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
 }
 
-/* Slogan ve isim */
+/* LOQONUN YANINDAKİ MƏTN QƏSƏBƏSİ (LEONBOOST + Liginizi Zafere Taşıyın) */
 .logo-text-group {
     display: flex;
+    /* Bu konteyneri də flexbox edirik */
     flex-direction: column;
+    /* ƏSAS: Mətnləri bir-birinin altına yığır */
+    align-items: flex-start;
+    /* Mətnləri soldan hizala */
+    line-height: 1.2;
+    /* Sətirlər arası boşluğu tənzimləyin */
 }
 
+/* LEONBOOST MƏTNİ ÜÇÜN STILLƏR */
 .logo-name {
-    font-size: 1.6em;
-    font-weight: 700;
     color: var(--primary-color);
+    /* Loqo mətninin rəngi */
+    font-family: 'Poppins', sans-serif;
+    /* Şrift */
+    font-size: 1.8em;
+    /* "LEONBOOST" yazısının ölçüsü (şəkillərdəki böyük ölçüyə görə artırıldı) */
+    font-weight: 700;
+    /* Daha qalın */
+    white-space: nowrap;
+    /* Mətnin bir sətirdə qalmasını təmin edir */
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
+    /* Neon parıltı */
     margin: 0;
+    /* Standart boşluqları sıfırla */
 }
 
+/* LİGİNİZİ ZAFERE TAŞIYIN! MƏTNİ ÜÇÜN STILLƏR */
 .tagline {
-    font-size: 0.9em;
     color: var(--light-gray);
+    /* Boz rəng */
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    /* Mətnin ölçüsü */
+    font-weight: 400;
+    /* Daha yüngül şrift qalınlığı */
+    white-space: nowrap;
+    margin: 0;
+    /* Standart boşluqları sıfırla */
     margin-top: 2px;
+    /* LEONBOOST ilə arasında kiçik boşluq */
 }
 
-/* NAV */
+
+/* Mobil uyğunluq üçün (responsive design) - 768px-dən kiçik ekranlarda mətnləri gizlədirik */
+@media (max-width: 768px) {
+    .logo-text-group {
+        display: none;
+        /* Kiçik ekranlarda LEONBOOST və tagline mətnlərini gizlədirik */
+    }
+
+    .logo img {
+        height: 40px;
+        /* Loqo şəklinin ölçüsü kiçik ekranlarda */
+    }
+
+    /* Navigasiya və user controls üçün dəyişikliklər */
+    .main-header .main-nav,
+    .main-header .user-controls {
+        display: none;
+        /* Desktopda gizli olan bu elementləri mobil ölçüdə gizlət */
+    }
+
+    .main-header .hamburger-menu {
+        display: block;
+        /* Hamburger ikonunu göster */
+    }
+
+    /* Hamburger menyusu açıldığında CSS (əvvəlki cavablarımdan) */
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--dark-bg);
+        position: absolute;
+        top: 80px;
+        /* Header yüksekliği kadar aşağıda */
+        left: 0;
+        padding: 20px 0;
+        border-top: 1px solid var(--border-color);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .main-nav.active ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .user-controls.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--dark-bg);
+        position: absolute;
+        top: 280px;
+        /* Menüden sonra */
+        left: 0;
+        padding: 20px 0;
+        border-top: 1px solid var(--border-color);
+        align-items: center;
+    }
+}
+
 .main-nav ul {
     display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    gap: 30px;
 }
 
 .main-nav ul li a {
     color: var(--light-gray);
     font-weight: 600;
-    text-decoration: none;
     padding: 5px 0;
     position: relative;
 }
@@ -228,11 +314,11 @@ h6 {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -5px;
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transition: width 0.3s;
+    transition: width 0.3s ease;
 }
 
 .main-nav ul li a:hover::after,
@@ -240,35 +326,40 @@ h6 {
     width: 100%;
 }
 
-/* USER CONTROLS */
+.main-nav ul li a i {
+    margin-right: 8px;
+    color: var(--accent-color);
+    /* Oyun ikonları üçün bənövşəyi */
+}
+
 .user-controls {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* HAMBURGER */
+.lang-switcher {
+    display: flex;
+    gap: 1px;
+    margin-left: 10px;
+}
+
+.lang-switcher img {
+    width: px;
+    height: 28px;
+    cursor: pointer;
+    /* border: 2px solid transparent; */
+    border-radius: 50%;
+    /* transition: border-color 0.3s ease; */
+}
+
+
 .hamburger-menu {
     display: none;
+    /* Mobil için varsayılan olarak gizli */
     font-size: 1.8em;
-    color: var(--primary-color);
     cursor: pointer;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .main-nav, .user-controls, .logo-text-group {
-        display: none;
-    }
-    .hamburger-menu {
-        display: block;
-    }
-}
-
-
-    .logo-text-group {
-        display: none;
-    }
+    color: var(--primary-color);
 }
 
 
@@ -1950,9 +2041,6 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
-
-
-
 
 
 
