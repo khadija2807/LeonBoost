@@ -151,42 +151,42 @@ h6 {
 }
 
 /* HEADER GENEL */
+/* HEADER GENEL */
 .main-header {
     background-color: var(--dark-bg);
-    padding: 15px 40px; /* üst-alt:15px, sağ-sol:40px */
-    border-bottom: 2px solid var(--primary-color);
+    padding: 10px 40px; /* sağ-sol boşluk */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-}
-
-/* HEADER İÇERİK HİZALAMA */
-.header-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
 
-/* LOGO + SLOGAN */
+.header-content {
+    width: 100%;
+    max-width: 1200px; /* ekranı tamamen kaplamasın */
+    display: flex;
+    justify-content: space-between; /* sol logo, sağ nav + user-controls */
+    align-items: center;
+}
+
+/* LOGO VE METİN */
 .logo {
     display: flex;
     align-items: center;
-    gap: 15px; /* logo ve metin arasındaki boşluk arttırıldı */
+    gap: 15px;
 }
 
 .logo img {
     height: 50px;
-    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+    display: block;
 }
 
+/* Slogan ve isim */
 .logo-text-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    line-height: 1.2;
 }
 
 .logo-name {
@@ -194,19 +194,18 @@ h6 {
     font-weight: 700;
     color: var(--primary-color);
     margin: 0;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
 }
 
 .tagline {
     font-size: 0.9em;
     color: var(--light-gray);
-    margin: 2px 0 0 0;
+    margin-top: 2px;
 }
 
-/* NAVİGASYON */
+/* NAV */
 .main-nav ul {
     display: flex;
-    gap: 25px; /* menü elemanları arası boşluk arttırıldı */
+    gap: 25px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -215,9 +214,9 @@ h6 {
 .main-nav ul li a {
     color: var(--light-gray);
     font-weight: 600;
-    padding: 8px 0;
+    text-decoration: none;
+    padding: 5px 0;
     position: relative;
-    transition: color 0.3s;
 }
 
 .main-nav ul li a.active,
@@ -233,7 +232,7 @@ h6 {
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transition: width 0.3s ease;
+    transition: width 0.3s;
 }
 
 .main-nav ul li a:hover::after,
@@ -248,59 +247,24 @@ h6 {
     gap: 15px;
 }
 
-.btn-login {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 6px 14px;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-.btn-signup {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 6px 14px;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-/* DİL SEÇİCİ */
-.lang-switcher {
-    display: flex;
-    gap: 5px;
-    margin-left: 10px;
-}
-
-.lang-switcher img {
-    width: 28px; /* boş bırakılmış width düzeltildi */
-    height: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.lang-switcher img.active-lang {
-    border: 2px solid var(--primary-color);
-}
-
-/* HAMBURGER MENÜ (MOBİL) */
+/* HAMBURGER */
 .hamburger-menu {
     display: none;
     font-size: 1.8em;
-    cursor: pointer;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-    .main-nav,
-    .user-controls {
+    .main-nav, .user-controls, .logo-text-group {
         display: none;
     }
-
     .hamburger-menu {
         display: block;
     }
+}
+
 
     .logo-text-group {
         display: none;
@@ -1986,6 +1950,7 @@ img {
   background-repeat: no-repeat;
   opacity: 0.15; /* Ümumi şəffaflıq */
 }
+
 
 
 
